@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ea776c" tools:context=".MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/fullscreen_content">
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/black_overlay" android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:id="@+id/imageView"
+            android:src="@mipmap/hal1"
+            android:maxHeight="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:text="Jogar"
+                    android:id="@+id/novoJogo"
+                    android:textColor="@android:color/white"
+                    android:gravity="left|center_vertical|center_horizontal"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/play"
+                    android:textSize="15dp"
+                    android:onClick="game"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:text="Recordes"
+                    android:id="@+id/recordes"
+                    android:textColor="@android:color/white"
+                    android:gravity="left|center_vertical"
+                    android:textSize="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/recordes"
+                    android:onClick="recordes"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:text="Sobre"
+                    android:id="@+id/sobre"
+                    android:textColor="@android:color/white"
+                    android:onClick="sobre"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/sobre_icon"
+                    android:gravity="left|center_vertical"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

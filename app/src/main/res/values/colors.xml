@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED6154</color>
+    <color name="colorPrimaryDark">#282F38</color>
+    <color name="colorAccent">#F9F8F6</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Activity do menu -->
+    <color name="button_menu">#55000000</color>
+    <color name="button_menu_pressed">#66000000</color>
+    <color name="button_menu_pont">#ff20aeff</color>
+    <color name="button_menu_pont_pressed">#ff008cff</color>
+    <color name="button_menu_pontuacao">#3affffff</color>
+
+    <!-- Jogo -->
+    <color name="button_jogo_vermelho">#ff0000</color>
+    <color name="button_jogo_verde">#00ff00</color>
+    <color name="button_jogo_azul">#0000ff</color>
+    <color name="button_jogo_amarelo">#ffff00</color>
+
+</resources>
